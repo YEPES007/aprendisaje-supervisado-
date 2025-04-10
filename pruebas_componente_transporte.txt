@@ -1,0 +1,42 @@
+
+Pruebas realizadas al componente desarrollado: Sistema Inteligente para Transporte Masivo
+
+1. Objetivo de las pruebas:
+   Verificar el correcto funcionamiento del modelo de aprendizaje automático para predecir si una ruta es óptima en un sistema de transporte masivo, utilizando un dataset simulado.
+
+2. Componentes probados:
+   - Generación y carga del dataset
+   - Preprocesamiento de datos (codificación de variables categóricas)
+   - División del dataset en entrenamiento y prueba
+   - Entrenamiento del modelo (Random Forest Classifier)
+   - Evaluación del modelo con métricas de clasificación
+
+3. Detalles de las pruebas:
+
+   a. Carga del Dataset:
+      ✔️ Se generaron 100 registros simulados correctamente.
+      ✔️ Se verificó que no hay valores nulos ni tipos de datos inválidos.
+
+   b. Preprocesamiento:
+      ✔️ Se aplicó codificación a las variables categóricas (LabelEncoder).
+      ✔️ Se confirmó que las variables quedaron numéricas y listas para el modelo.
+
+   c. División del dataset:
+      ✔️ Se dividió el conjunto en 80% entrenamiento y 20% prueba (train_test_split).
+      ✔️ Verificado el tamaño correcto de cada subconjunto.
+
+   d. Entrenamiento del modelo:
+      ✔️ Se entrenó un modelo Random Forest sin errores.
+      ✔️ El modelo ajustó correctamente los datos de entrenamiento.
+
+   e. Evaluación del modelo:
+      ✔️ Se predijo sobre los datos de prueba.
+      ✔️ Se imprimió un reporte de clasificación con las métricas:
+         - Precisión (accuracy)
+         - Recall
+         - F1-score
+      ✔️ El modelo mostró un desempeño balanceado y aceptable con los datos simulados.
+
+4. Resultado:
+   El componente funciona correctamente y cumple con el objetivo de clasificar rutas como óptimas o no, con base en las características del viaje. Puede ser usado como base para modelos más complejos o para incorporar datos reales en el futuro.
+

@@ -1,0 +1,17 @@
+
+Descripción del Dataset: Transporte Masivo
+
+Este archivo CSV contiene datos simulados sobre trayectos en un sistema de transporte masivo urbano.
+Los datos están diseñados para ser utilizados en modelos de aprendizaje supervisado, como la clasificación de rutas óptimas.
+
+Columnas del Dataset:
+
+1. origen: Estación donde inicia el trayecto. Valores posibles: A, B, C, D.
+2. destino: Estación donde finaliza el trayecto. Valores posibles: A, B, C, D.
+3. hora: Hora del día en que se realiza el viaje. Valores posibles: mañana, tarde, noche.
+4. dia_semana: Día de la semana en que se realiza el viaje. Valores posibles: lunes, martes, miércoles, jueves, viernes.
+5. tiempo_viaje: Duración total del trayecto en minutos. Valores numéricos entre 5 y 30.
+6. congestion: Nivel de congestión del trayecto. Valores posibles: bajo, medio, alto.
+7. ruta_optima: Indica si el trayecto realizado fue la mejor ruta posible. Valores posibles: sí, no.
+
+Este dataset puede ser utilizado para entrenar modelos de clasificación (por ejemplo, para predecir si una ruta es óptima).
